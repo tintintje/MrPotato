@@ -14,6 +14,8 @@
 		FB7C6CD21BEBABED000D6AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7C6CD01BEBABED000D6AF1 /* LaunchScreen.storyboard */; };
 		FB7C6CDD1BEBABED000D6AF1 /* MrPotatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C6CDC1BEBABED000D6AF1 /* MrPotatoTests.swift */; };
 		FB7C6CE81BEBABED000D6AF1 /* MrPotatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C6CE71BEBABED000D6AF1 /* MrPotatoUITests.swift */; };
+		FB7C6CF61BEBADF0000D6AF1 /* mr-potato-head-images in Resources */ = {isa = PBXBuildFile; fileRef = FB7C6CF51BEBADF0000D6AF1 /* mr-potato-head-images */; settings = {ASSET_TAGS = (); }; };
+		FB7C6CF81BEBBA5B000D6AF1 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = FB7C6CF71BEBBA5B000D6AF1 /* unchecked.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FB7C6CE31BEBABED000D6AF1 /* MrPotatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrPotatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7C6CE71BEBABED000D6AF1 /* MrPotatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrPotatoUITests.swift; sourceTree = "<group>"; };
 		FB7C6CE91BEBABED000D6AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7C6CF51BEBADF0000D6AF1 /* mr-potato-head-images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mr-potato-head-images"; path = "../../../Downloads/mr-potato-head-images"; sourceTree = "<group>"; };
+		FB7C6CF71BEBBA5B000D6AF1 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unchecked.png; path = "../../../Documents/Minor Programming/Period 2/Native App Studio/Week 2/unchecked.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				FB7C6CC71BEBABED000D6AF1 /* AppDelegate.swift */,
 				FB7C6CC91BEBABED000D6AF1 /* ViewController.swift */,
 				FB7C6CCB1BEBABED000D6AF1 /* Main.storyboard */,
+				FB7C6CF71BEBBA5B000D6AF1 /* unchecked.png */,
+				FB7C6CF51BEBADF0000D6AF1 /* mr-potato-head-images */,
 				FB7C6CCE1BEBABED000D6AF1 /* Assets.xcassets */,
 				FB7C6CD01BEBABED000D6AF1 /* LaunchScreen.storyboard */,
 				FB7C6CD31BEBABED000D6AF1 /* Info.plist */,
@@ -230,7 +236,9 @@
 			files = (
 				FB7C6CD21BEBABED000D6AF1 /* LaunchScreen.storyboard in Resources */,
 				FB7C6CCF1BEBABED000D6AF1 /* Assets.xcassets in Resources */,
+				FB7C6CF61BEBADF0000D6AF1 /* mr-potato-head-images in Resources */,
 				FB7C6CCD1BEBABED000D6AF1 /* Main.storyboard in Resources */,
+				FB7C6CF81BEBBA5B000D6AF1 /* unchecked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
