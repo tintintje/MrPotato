@@ -14,6 +14,7 @@
 		FB7C6CD21BEBABED000D6AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7C6CD01BEBABED000D6AF1 /* LaunchScreen.storyboard */; };
 		FB7C6CDD1BEBABED000D6AF1 /* MrPotatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C6CDC1BEBABED000D6AF1 /* MrPotatoTests.swift */; };
 		FB7C6CE81BEBABED000D6AF1 /* MrPotatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7C6CE71BEBABED000D6AF1 /* MrPotatoUITests.swift */; };
+		FBA96E4D1BEC94BB00E9D728 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FBA96E4C1BEC94BB00E9D728 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FB7C6CE31BEBABED000D6AF1 /* MrPotatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrPotatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7C6CE71BEBABED000D6AF1 /* MrPotatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrPotatoUITests.swift; sourceTree = "<group>"; };
 		FB7C6CE91BEBABED000D6AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA96E4C1BEC94BB00E9D728 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FB7C6CBB1BEBABED000D6AF1 = {
 			isa = PBXGroup;
 			children = (
+				FBA96E4C1BEC94BB00E9D728 /* README.md */,
 				FB7C6CC61BEBABED000D6AF1 /* MrPotato */,
 				FB7C6CDB1BEBABED000D6AF1 /* MrPotatoTests */,
 				FB7C6CE61BEBABED000D6AF1 /* MrPotatoUITests */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA96E4D1BEC94BB00E9D728 /* README.md in Sources */,
 				FB7C6CCA1BEBABED000D6AF1 /* ViewController.swift in Sources */,
 				FB7C6CC81BEBABED000D6AF1 /* AppDelegate.swift in Sources */,
 			);
@@ -483,6 +487,7 @@
 				FB7C6CEE1BEBABED000D6AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB7C6CEF1BEBABED000D6AF1 /* Build configuration list for PBXNativeTarget "MrPotatoTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				FB7C6CF11BEBABED000D6AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB7C6CF21BEBABED000D6AF1 /* Build configuration list for PBXNativeTarget "MrPotatoUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				FB7C6CF41BEBABED000D6AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

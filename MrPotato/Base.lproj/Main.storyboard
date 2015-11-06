@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -12,12 +13,12 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC" userLabel="ScreenView">
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC" userLabel="Screen View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-5D-aDr" userLabel="Section Stack View">
-                                <rect key="frame" x="128" y="28" width="345" height="545"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6yy-5D-aDr" userLabel="Section Stack View">
+                                <rect key="frame" x="128" y="28" width="345" height="553"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-m0-mmC" userLabel="MrPotatoView">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="370"/>
@@ -74,260 +75,283 @@
                                             <constraint firstAttribute="width" constant="345" id="kBN-dL-COx"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Check boxes to add parts to Mr Potato Head!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-9n-2xS" userLabel="Instruction">
-                                        <rect key="frame" x="0.0" y="370" width="345" height="23"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="23" id="XC0-kT-N6u"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-YP-VZh" userLabel="Parts Stack View">
-                                        <rect key="frame" x="0.0" y="393" width="345" height="152"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3vF-0L-gqF">
+                                        <rect key="frame" x="0.0" y="375" width="345" height="178"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9n-cg-21i" userLabel="Left Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="152"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Check boxes to add parts to Mr Potato Head!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pG5-9n-2xS" userLabel="Instruction">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-YP-VZh" userLabel="Parts Stack View">
+                                                <rect key="frame" x="0.0" y="26" width="345" height="152"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-pP-8cY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="152"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9n-cg-21i" userLabel="Left Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="152"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-w8-xuG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-pP-8cY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="152"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBU-w8-xuG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="jgQ-9E-72h"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="kQr-mQ-Oig"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Eyes" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDM-fo-o2W"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssn-xp-y6a">
+                                                                        <rect key="frame" x="0.0" y="33" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="LGi-uX-SY5"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="M3k-tm-LyC"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Eyebrows" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ku9-mK-cJG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQJ-s1-ynv">
+                                                                        <rect key="frame" x="0.0" y="66" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="EgB-Xm-iOR"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="FIi-Rr-R5s"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Ears" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wa-IP-7du"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doI-jg-FVZ">
+                                                                        <rect key="frame" x="0.0" y="99" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="jNe-9P-cE0"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="jrJ-6a-sLQ"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Nose" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-hL-ztb"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLW-xQ-u1F">
+                                                                        <rect key="frame" x="0.0" y="132" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="5Yd-pZ-dlJ"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="uA9-Uq-4Pp"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Mouth" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCM-Yq-CDc"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
                                                                 <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="jgQ-9E-72h"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="kQr-mQ-Oig"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Eyes" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDM-fo-o2W"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssn-xp-y6a">
-                                                                <rect key="frame" x="0.0" y="33" width="20" height="20"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l4W-AS-g6h">
+                                                                <rect key="frame" x="20" y="0.0" width="146" height="152"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-05-ccQ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="32"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Eyes"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lp-XD-lp9">
+                                                                        <rect key="frame" x="0.0" y="32" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Eyebrows"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-7W-bsw">
+                                                                        <rect key="frame" x="0.0" y="62" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Ears"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7v-yp-uTz">
+                                                                        <rect key="frame" x="0.0" y="92" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Nose"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-zv-3AR">
+                                                                        <rect key="frame" x="0.0" y="122" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Mouth"/>
+                                                                    </button>
+                                                                </subviews>
                                                                 <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="LGi-uX-SY5"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="M3k-tm-LyC"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Eyebrows" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ku9-mK-cJG"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQJ-s1-ynv">
-                                                                <rect key="frame" x="0.0" y="66" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="20" id="EgB-Xm-iOR"/>
-                                                                    <constraint firstAttribute="width" constant="20" id="FIi-Rr-R5s"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Ears" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wa-IP-7du"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doI-jg-FVZ">
-                                                                <rect key="frame" x="0.0" y="99" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="jNe-9P-cE0"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="jrJ-6a-sLQ"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Nose" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-hL-ztb"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLW-xQ-u1F">
-                                                                <rect key="frame" x="0.0" y="132" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="20" id="5Yd-pZ-dlJ"/>
-                                                                    <constraint firstAttribute="width" constant="20" id="uA9-Uq-4Pp"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Mouth" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCM-Yq-CDc"/>
-                                                                </connections>
-                                                            </button>
+                                                            </stackView>
                                                         </subviews>
                                                         <animations/>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l4W-AS-g6h">
-                                                        <rect key="frame" x="20" y="0.0" width="146" height="152"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlv-94-Crt" userLabel="Right Stack View">
+                                                        <rect key="frame" x="180" y="0.0" width="166" height="152"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-05-ccQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="32"/>
+                                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-6u-vuX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="152"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jny-6k-bew">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="8Yh-38-vb4"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="ARm-ep-kFs"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Arms" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdO-1u-v7A"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-Fa-vPh">
+                                                                        <rect key="frame" x="0.0" y="33" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="20" id="9JL-hM-Gjg"/>
+                                                                            <constraint firstAttribute="width" constant="20" id="fz7-e3-oXh"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Glasses" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZcD-ig-qk4"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNn-gy-JMl">
+                                                                        <rect key="frame" x="0.0" y="66" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="XkN-gG-hEX"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="gOc-Hn-Iot"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Hat" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJH-f9-DCM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCA-1e-Z9H">
+                                                                        <rect key="frame" x="0.0" y="99" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Wc7-oa-A1o"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="YaZ-qm-2BN"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Shoes" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iH-lq-4DQ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYo-IM-Z3v">
+                                                                        <rect key="frame" x="0.0" y="132" width="20" height="20"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="20" id="Rpd-9L-tgO"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="jbP-Nj-fQa"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Mustache" image="unchecked"/>
+                                                                        <connections>
+                                                                            <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCu-Pn-aBp"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
                                                                 <animations/>
-                                                                <state key="normal" title="Eyes"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lp-XD-lp9">
-                                                                <rect key="frame" x="0.0" y="32" width="146" height="30"/>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vgw-f9-kdJ">
+                                                                <rect key="frame" x="20" y="0.0" width="146" height="152"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUe-VL-4Fk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146" height="32"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ieB-qX-cQG"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Arms"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x2-E2-Dwc">
+                                                                        <rect key="frame" x="0.0" y="32" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="Rt5-hb-sWC"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Glasses"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-88-PAo">
+                                                                        <rect key="frame" x="0.0" y="62" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="6z8-um-9Lc"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Hat"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-Jd-hOT">
+                                                                        <rect key="frame" x="0.0" y="92" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ky7-J4-BtY"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Shoes"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL2-Ec-BHW">
+                                                                        <rect key="frame" x="0.0" y="122" width="146" height="30"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="oTc-x7-7du"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Mustache"/>
+                                                                    </button>
+                                                                </subviews>
                                                                 <animations/>
-                                                                <state key="normal" title="Eyebrows"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-7W-bsw">
-                                                                <rect key="frame" x="0.0" y="62" width="146" height="30"/>
-                                                                <animations/>
-                                                                <state key="normal" title="Ears"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7v-yp-uTz">
-                                                                <rect key="frame" x="0.0" y="92" width="146" height="30"/>
-                                                                <animations/>
-                                                                <state key="normal" title="Nose"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-zv-3AR">
-                                                                <rect key="frame" x="0.0" y="122" width="146" height="30"/>
-                                                                <animations/>
-                                                                <state key="normal" title="Mouth"/>
-                                                            </button>
+                                                            </stackView>
                                                         </subviews>
                                                         <animations/>
                                                     </stackView>
                                                 </subviews>
                                                 <animations/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlv-94-Crt" userLabel="Right Stack View">
-                                                <rect key="frame" x="180" y="0.0" width="166" height="152"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-6u-vuX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="152"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jny-6k-bew">
-                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="8Yh-38-vb4"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="ARm-ep-kFs"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Arms" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QdO-1u-v7A"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKe-Fa-vPh">
-                                                                <rect key="frame" x="0.0" y="33" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="20" id="9JL-hM-Gjg"/>
-                                                                    <constraint firstAttribute="width" constant="20" id="fz7-e3-oXh"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Glasses" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZcD-ig-qk4"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNn-gy-JMl">
-                                                                <rect key="frame" x="0.0" y="66" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="XkN-gG-hEX"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="gOc-Hn-Iot"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Hat" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJH-f9-DCM"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCA-1e-Z9H">
-                                                                <rect key="frame" x="0.0" y="99" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="Wc7-oa-A1o"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="YaZ-qm-2BN"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Shoes" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iH-lq-4DQ"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYo-IM-Z3v">
-                                                                <rect key="frame" x="0.0" y="132" width="20" height="20"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="20" id="Rpd-9L-tgO"/>
-                                                                    <constraint firstAttribute="height" constant="20" id="jbP-Nj-fQa"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Mustache" image="unchecked"/>
-                                                                <connections>
-                                                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCu-Pn-aBp"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <animations/>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vgw-f9-kdJ">
-                                                        <rect key="frame" x="20" y="0.0" width="146" height="152"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUe-VL-4Fk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="146" height="32"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ieB-qX-cQG"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Arms"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x2-E2-Dwc">
-                                                                <rect key="frame" x="0.0" y="32" width="146" height="30"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="Rt5-hb-sWC"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Glasses"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-88-PAo">
-                                                                <rect key="frame" x="0.0" y="62" width="146" height="30"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="6z8-um-9Lc"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Hat"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-Jd-hOT">
-                                                                <rect key="frame" x="0.0" y="92" width="146" height="30"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="ky7-J4-BtY"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Shoes"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL2-Ec-BHW">
-                                                                <rect key="frame" x="0.0" y="122" width="146" height="30"/>
-                                                                <animations/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="oTc-x7-7du"/>
-                                                                </constraints>
-                                                                <state key="normal" title="Mustache"/>
-                                                            </button>
-                                                        </subviews>
-                                                        <animations/>
-                                                    </stackView>
-                                                </subviews>
-                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstItem="mlv-94-Crt" firstAttribute="width" secondItem="M9n-cg-21i" secondAttribute="width" id="XTP-cK-E8y"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstItem="mlv-94-Crt" firstAttribute="width" secondItem="M9n-cg-21i" secondAttribute="width" id="XTP-cK-E8y"/>
+                                            <constraint firstItem="8xl-YP-VZh" firstAttribute="top" secondItem="pG5-9n-2xS" secondAttribute="bottom" constant="5" id="07s-RW-s5I"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstItem="8xl-YP-VZh" firstAttribute="top" secondItem="pG5-9n-2xS" secondAttribute="bottom" id="0fn-5D-wNx"/>
+                                    <constraint firstItem="3vF-0L-gqF" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="6yy-5D-aDr" secondAttribute="trailingMargin" id="01I-TL-bKU"/>
                                 </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6yy-5D-aDr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2bg-aj-tSt"/>
-                            <constraint firstItem="6yy-5D-aDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vGa-ek-4gO"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="3vF-0L-gqF" secondAttribute="trailing" constant="107" id="9zp-yl-ODw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6yy-5D-aDr" secondAttribute="bottom" constant="19" id="Bb4-5s-HL7"/>
+                            <constraint firstItem="6yy-5D-aDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U90-co-C7q"/>
+                            <constraint firstItem="6yy-5D-aDr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="VA0-ae-xSV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Arms" destination="DBr-eR-AUc" id="1JK-Zm-b8L"/>
+                        <outlet property="Body" destination="tFn-Ti-mgR" id="JNU-s5-lYe"/>
+                        <outlet property="Ears" destination="Lub-dx-QM3" id="Gb1-cQ-eFk"/>
+                        <outlet property="Eyebrows" destination="shS-Iv-Ui8" id="rb5-rP-6bF"/>
+                        <outlet property="Eyes" destination="Jh8-X3-huD" id="eJW-Me-g55"/>
+                        <outlet property="Glasses" destination="vbO-NC-7Wg" id="eEb-V7-QHT"/>
+                        <outlet property="Hat" destination="9l7-7U-RIM" id="NIP-xA-GZu"/>
+                        <outlet property="Mouth" destination="b9b-zL-WJS" id="ICQ-Mp-Ty1"/>
+                        <outlet property="MrPotatoView" destination="Nxo-m0-mmC" id="X5h-L9-bjc"/>
+                        <outlet property="Mustache" destination="LiE-UD-d8m" id="Mob-LT-XXe"/>
+                        <outlet property="Nose" destination="SX8-Eg-LS6" id="V35-1w-kbS"/>
+                        <outlet property="Shoes" destination="MXN-uf-ey9" id="ahk-Gt-wus"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

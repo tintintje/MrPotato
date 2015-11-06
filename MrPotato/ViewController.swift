@@ -9,8 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var MrPotatoView: UIView!
     
-    @IBOutlet weak var MrPotatoView: UIImageView!
+    
+    
+    @IBOutlet weak var Body: UIImageView!
+    @IBOutlet weak var Ears: UIImageView!
+    @IBOutlet weak var Eyes: UIImageView!
+    @IBOutlet weak var Hat: UIImageView!
+    @IBOutlet weak var Eyebrows: UIImageView!
+    @IBOutlet weak var Glasses: UIImageView!
+    @IBOutlet weak var Mouth: UIImageView!
+    @IBOutlet weak var Mustache: UIImageView!
+    @IBOutlet weak var Nose: UIImageView!
+    @IBOutlet weak var Shoes: UIImageView!
+    @IBOutlet weak var Arms: UIImageView!
     
     let checkedImage = UIImage(named:"checked")
     let uncheckedImage = UIImage(named: "unchecked")
@@ -18,7 +31,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        MrPotatoView.image = UIImage(named: "body")
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,29 +53,28 @@ class ViewController: UIViewController {
         let part = sender.currentTitle!
         
         switch part {
-            case "Eyes": updatePart("eyes")
-            case "Eyebrows": updatePart("eyebrows")
-            case "Ears": updatePart("ears")
-            case "Nose": updatePart("nose")
-            case "Mouth": updatePart("mouth")
+            // is there maybe a way to link the checkbox to the image parts?
+            case "Eyes": updatePart(Eyes)
+            case "Eyebrows": updatePart(Eyebrows)
+            case "Ears": updatePart(Ears)
+            case "Nose": updatePart(Nose)
+            case "Mouth": updatePart(Mouth)
             
-            case "Arms": updatePart("arms")
-            case "Glasses": updatePart("glasses")
-            case "Hat": updatePart("hat")
-            case "Shoes": updatePart("shoes")
-            case "Mustache": updatePart("mustache")
+            case "Arms": updatePart(Arms)
+            case "Glasses": updatePart(Glasses)
+            case "Hat": updatePart(Hat)
+            case "Shoes": updatePart(Shoes)
+            case "Mustache": updatePart(Mustache)
             default: break
         }
     }
     
-    func updatePart(part: String){
-        
-//        var maskImageSize = CGSizeMake(MrPotatoView.frame.width, MrPotatoView.frame.height)
-        
-        let maskLayer = CALayer()
-        maskLayer.contents = UIImage(named: part)
-        
-        MrPotatoView.layer.mask = maskLayer
+    func updatePart(part: UIImageView){
+        if(part.hidden){
+            part.hidden = false
+        }else{
+            part.hidden = true
+        }
     }
 }
 
